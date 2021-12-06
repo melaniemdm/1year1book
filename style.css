@@ -1,32 +1,45 @@
-.bloc{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 500px;
-   }
+@import url("blogStyle.css");
+.bloc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+}
 
-   .title, .texture{
-       width: 100%;
-       display: flex;
-       justify-content: center;
-    }
-   .title{
-       font-size: 30px;
-   }
-   .texture{
-       font-size: 10px
-   }
-   .button{
-       width: 100%;
-       margin-top: 50px;
-   }
-   .produits{
-       margin-top: 100px;
-       padding-top: 50px;
-       padding-bottom: 50px;
-       display: flex;
-       justify-content: center;
-      background-color: grey; 
-     
-   }
+.title, .texture {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.title {
+  font-size: 30px;
+}
+
+.texture {
+  font-size: 10px;
+}
+
+.button {
+  width: 100%;
+  margin-top: 50px;
+}
+
+#produits {
+  margin-top: 50px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  background-color: #99caaf;
+}
+
+.footer {
+  margin-top: 100px;
+  padding-top: 90px;
+}
+
+.logo {
+  margin-left: 208px;
+}/*# sourceMappingURL=style.css.map */
