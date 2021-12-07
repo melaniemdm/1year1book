@@ -43,4 +43,15 @@
 
 .logo {
   margin-left: 208px;
+}
+
+.close img {
+  width: 20px;
+  margin: 20px;
+  position: relative;
+  left: 80%;
+}
+
+#modalMag, #modalLivre {
+  display: none;
 }/*# sourceMappingURL=style.css.map */
