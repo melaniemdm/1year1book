@@ -99,11 +99,11 @@
   margin-bottom: 50px;
 }
 
-#exemplaire {
+#exemplaireMag, #exemplaireLivre {
   width: 10px;
   color: white;
 }
-#exemplaire input {
+#exemplaireMag input, #exemplaireLivre input {
   color: black;
   width: 150px;
 }
