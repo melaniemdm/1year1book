@@ -28,14 +28,15 @@ function closeModal(){
     }
 
   let nodePriceMag = document.querySelector(".priceMag").innerHTML  
-let nodeInput = document.querySelector("#nombreExemplaire")
+let nodeInputMag = document.querySelector("#nombreExemplaireMag")
+nodeInputMag.addEventListener("keyup",newPrice)
+let nodeInputLivre = document.querySelector("#nombreExemplaireLivre")
+nodeInputLivre.addEventListener("keyup",newPrice)
 
-nodeInput.addEventListener("keyup",newPrice)
-
-  function newPrice(){
-      let nodeNbrExemplaire = parseInt(document.querySelector("#nombreExemplaire").value);
+  function newPrice(e){
+      let nodeNbrExemplaire = parseInt(e.target.value);
 if(nodeNbrExemplaire > 0){
-    let nodeNbrExemplaire = parseInt(document.querySelector("#nombreExemplaire").value);  
+    let nodeNbrExemplaire = parseInt(e.target.value);  
     let pricePriceMag = parseInt(document.querySelector(".priceMag").innerHTML) ;
     var resultat = (nodeNbrExemplaire*pricePriceMag)
     let nodePriceMag = document.querySelector(".priceMag");

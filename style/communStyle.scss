@@ -1,3 +1,4 @@
+@import "responsive.scss";
 @import url("https://fonts.googleapis.com/css2?family=Kodchasan:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
 /*---------------section---------------*/
 .titleSection{
@@ -63,6 +64,10 @@
         width: 150px;
     }
 }
+.menu{
+  display: flex;
+}
+
 /*---------------footer---------------*/
 .footer {
   margin-top: 100px;
@@ -87,3 +92,19 @@
   display: flex;
   margin-bottom: 50px;
 }
+
+/*---------------menu responsive---------------*/
+@media #{$small-down} {
+  .menu{
+      display: none;
+      margin-top: 50px;
+  }
+  .closeBurger{
+      display: none;
+      & img{
+        width: 20px;
+      margin: 20px;   
+      }
+     
+  }
+  }
