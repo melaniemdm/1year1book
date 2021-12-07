@@ -1,0 +1,16 @@
+
+  #exemplaire{
+    width: 10px;
+      color: white;
+      & input{
+          color: black;
+          width: 150px;
+      }
+  }
+  .close img {
+    width: 20px;
+    margin: 20px;
+    position: relative;
+    left: 80%;
+  }
+  
