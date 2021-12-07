@@ -7,6 +7,7 @@
   align-items: center;
   height: 500px;
   box-shadow: inset 2px 2px 8px 8px grey;
+  transition: 0.3s linear;
 }
 .bloc:hover {
   transition: 0.3s linear;
@@ -78,8 +79,10 @@
 }
 
 #exemplaire {
+  width: 10px;
   color: white;
 }
 #exemplaire input {
   color: black;
+  width: 150px;
 }/*# sourceMappingURL=style.css.map */

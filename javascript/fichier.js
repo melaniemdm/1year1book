@@ -25,5 +25,26 @@ function closeModal(){
     nodeModalMagClose.style.display="none";
     let nodeModalLivreClose = document.querySelector("#modalLivre")
     nodeModalLivreClose.style.display="none";
-    
-}
+    }
+
+  let nodePriceMag = document.querySelector(".priceMag").innerHTML  
+let nodeInput = document.querySelector("#nombreExemplaire")
+
+nodeInput.addEventListener("keyup",newPrice)
+
+  function newPrice(){
+      let nodeNbrExemplaire = parseInt(document.querySelector("#nombreExemplaire").value);
+if(nodeNbrExemplaire > 0){
+    let nodeNbrExemplaire = parseInt(document.querySelector("#nombreExemplaire").value);  
+    let pricePriceMag = parseInt(document.querySelector(".priceMag").innerHTML) ;
+    var resultat = (nodeNbrExemplaire*pricePriceMag)
+    let nodePriceMag = document.querySelector(".priceMag");
+    nodePriceMag.innerHTML = resultat + "€"
+}else{
+    let nodePriceMag = document.querySelector(".priceMag");
+    let resultat = 15;
+    nodePriceMag.innerHTML = resultat + "€" 
+  }
+
+  }
+  
