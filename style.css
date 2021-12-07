@@ -75,4 +75,11 @@
 
 .containertitle {
   margin-bottom: 50px;
+}
+
+#exemplaire {
+  color: white;
+}
+#exemplaire input {
+  color: black;
 }/*# sourceMappingURL=style.css.map */
