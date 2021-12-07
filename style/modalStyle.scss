@@ -1,5 +1,7 @@
 
-  #exemplaire{
+ @import "communStyle.scss";
+
+ #exemplaire{
     width: 10px;
       color: white;
       & input{
@@ -7,10 +9,25 @@
           width: 150px;
       }
   }
-  .close img {
-    width: 20px;
-    margin: 20px;
-    position: relative;
-    left: 80%;
-  }
+  #modalMag,
+#modalLivre {
+  display: none;
+}
+.close img {
+  width: 20px;
+  margin: 20px;
+  position: relative;
+  left: 80%;
+}
+
+#modalMag, #modalLivre{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items:center;
+  background-color: rgba(167, 231, 201, 0.5);
   
+}

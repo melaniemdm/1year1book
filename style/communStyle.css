@@ -1,5 +1,15 @@
-@import url("blogStyle.css");
 @import url("https://fonts.googleapis.com/css2?family=Kodchasan:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+/*---------------section---------------*/
+.titleSection {
+  background-color: #16703f;
+  opacity: 0.4;
+  color: white;
+  width: 70%;
+  border-end-start-radius: -50px;
+  padding-left: 10px;
+  margin-top: 40px;
+}
+
 .bloc {
   display: flex;
   flex-direction: column;
@@ -45,37 +55,12 @@
   margin-top: -50px;
 }
 
-.footer {
-  margin-top: 100px;
-  padding-top: 90px;
-}
-
-.logo {
-  margin-left: 208px;
-}
-
-.close img {
-  width: 20px;
-  margin: 20px;
-  position: relative;
-  left: 80%;
-}
-
-#modalMag,
-#modalLivre {
-  display: none;
-}
-
 .titleOffres {
   font-family: "Kodchasan", "Arial Narrow", Arial, sans-serif;
   font-size: xx-large;
   background-color: red;
   display: flex;
   justify-content: center;
-}
-
-.containertitle {
-  margin-bottom: 50px;
 }
 
 #exemplaire {
@@ -85,4 +70,31 @@
 #exemplaire input {
   color: black;
   width: 150px;
+}
+
+/*---------------footer---------------*/
+.footer {
+  margin-top: 100px;
+  padding-top: 90px;
+}
+
+.logo {
+  margin-left: 208px;
+}
+
+/*---------------mise en page du titre des sections---------------*/
+.circle {
+  background-color: white;
+  z-index: 1;
+  margin-left: -25px;
+  margin-top: 40px;
+  width: 58px;
+  height: 40px;
+  border: 5px solid white;
+  border-radius: 50%;
+}
+
+.containertitle {
+  display: flex;
+  margin-bottom: 50px;
 }/*# sourceMappingURL=communStyle.css.map */
