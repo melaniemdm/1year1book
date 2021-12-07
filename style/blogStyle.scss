@@ -1,2 +1,13 @@
  @import "communStyle.scss";
  
+.card{ 
+    background-color: rgba(0,0,0);
+  opacity: 0.8;
+&:hover{
+    background-color: rgba(123, 226, 26, 0.2);
+    transform: scale(0.9);
+    opacity: 1;
+}}
+.titleBlog{
+    margin-left: -15px;
+}
