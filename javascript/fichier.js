@@ -1,51 +1,51 @@
-let nodeModalMag = document.querySelector(".btnMag")
-nodeModalMag.addEventListener("click", openModalMag)
-let nodeModalLivre = document.querySelector(".btnLivre")
-nodeModalLivre.addEventListener("click", openModalLivre)
+const nodeBtnMag = document.querySelector(".btnMag");
+nodeBtnMag.addEventListener("click", openModalMag);
+const nodeBtnLivre = document.querySelector(".btnLivre");
+nodeBtnLivre.addEventListener("click", openModalLivre);
+const nodeModalMag = document.querySelector("#modalMag");
+const nodeModalLivre = document.querySelector("#modalLivre");
+const nodeModalMagClose = document.querySelectorAll(".close");
+nodeModalMagClose.forEach((close) =>
+  close.addEventListener("click", closeModal)
+);
+const nodePriceMag = document.querySelector(".priceMag");
+const nodePriceLivre = document.querySelector(".priceLivre");
+const nodeInputMag = document.querySelector("#nombreExemplaireMag");
+nodeInputMag.addEventListener("change", newPrice);
+const nodeInputLivre = document.querySelector("#nombreExemplaireLivre");
+nodeInputLivre.addEventListener("change", newPrice);
+const magPrice = 15;
+const livrePrice = 25;
 
-function openModalMag(){
-    
-    let nodeModalMag = document.querySelector("#modalMag")
-    nodeModalMag.style.display="flex";
-    let nodeModalLivre = document.querySelector("#modalLivre")
-    nodeModalLivre.style.display="none";
+function openModalMag() {
+  nodeModalMag.style.display = "flex";
+  nodeModalLivre.style.display = "none";
 }
-function openModalLivre(){
-    let nodeModalLivre = document.querySelector("#modalLivre")
-    nodeModalLivre.style.display="flex";
-    let nodeModalMag = document.querySelector("#modalMag")
-    nodeModalMag.style.display="none";
+
+function openModalLivre() {
+  nodeModalLivre.style.display = "flex";
+  nodeModalMag.style.display = "none";
 }
 
-let nodeModalMagClose = document.querySelectorAll(".close")
-nodeModalMagClose.forEach((close)=> close.addEventListener("click", closeModal));
-
-function closeModal(){
-    let nodeModalMagClose = document.querySelector("#modalMag")
-    nodeModalMagClose.style.display="none";
-    let nodeModalLivreClose = document.querySelector("#modalLivre")
-    nodeModalLivreClose.style.display="none";
+function closeModal() {
+  nodeModalMag.style.display = "none";
+  nodeModalLivre.style.display = "none";
+}
+function newPrice(e) {
+  let nbrExemplaire = parseInt(e.target.value);
+  if (nbrExemplaire > 0) {
+    if (e.target === nodeInputMag) {
+      let resultat = nbrExemplaire * magPrice;
+      nodePriceMag.innerHTML = resultat + "€";
+    } else {
+      let resultat = nbrExemplaire * livrePrice;
+      nodePriceLivre.innerHTML = resultat + "€";
     }
-
-  let nodePriceMag = document.querySelector(".priceMag").innerHTML  
-let nodeInputMag = document.querySelector("#nombreExemplaireMag")
-nodeInputMag.addEventListener("keyup",newPrice)
-let nodeInputLivre = document.querySelector("#nombreExemplaireLivre")
-nodeInputLivre.addEventListener("keyup",newPrice)
-
-  function newPrice(e){
-      let nodeNbrExemplaire = parseInt(e.target.value);
-if(nodeNbrExemplaire > 0){
-    let nodeNbrExemplaire = parseInt(e.target.value);  
-    let pricePriceMag = parseInt(document.querySelector(".priceMag").innerHTML) ;
-    var resultat = (nodeNbrExemplaire*pricePriceMag)
-    let nodePriceMag = document.querySelector(".priceMag");
-    nodePriceMag.innerHTML = resultat + "€"
-}else{
-    let nodePriceMag = document.querySelector(".priceMag");
-    let resultat = 15;
-    nodePriceMag.innerHTML = resultat + "€" 
+  } else {
+    if (e.target === nodeInputMag) {
+      nodePriceMag.innerHTML = magPrice + "€";
+    } else {
+      nodePriceLivre.innerHTML = livrePrice + "€";
+    }
   }
-
-  }
-  
+}

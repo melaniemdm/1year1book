@@ -1,205 +1,256 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <!--lien vers tailwind-->
+    <!--lien vers tailwind-->
     <link href="https://melaniemdm.github.io/oc_librairies/tailwindcss-2.2.7-dist/tailwind.min.css" rel="stylesheet">
     <!--lien vers le fichier css-->
     <link rel="stylesheet" href="/style/modalStyle.css" />
     <title>OneYearOneBook</title>
 </head>
+
 <body>
     <header>
-<!--navBar-->
-<div class="bg-white shadow dark:bg-gray-800">
-    <div class="container px-6 py-4 mx-auto md:flex md:justify-between md:items-center">
-        <div class="flex items-center justify-between">
-            <div>
-                <a class="text-2xl font-bold text-gray-800 dark:text-white lg:text-3xl hover:text-gray-700 dark:hover:text-gray-300" href="#">1Year1Book</a>
-            </div>
-            
-            <!-- Mobile menu button -->
-            <div class="flex md:hidden ">
-                <div class="closeBurger" aria-label="close Burger">
-                    <img src="https://img.icons8.com/material-sharp/50/000000/delete-sign.png" alt="year Book"/>
+        <!--navBar-->
+        <div class="bg-white shadow dark:bg-gray-800">
+            <div class="container px-6 py-4 mx-auto md:flex md:justify-between md:items-center">
+                <div class="flex items-center justify-between">
+                    <div>
+                        <a class="text-2xl font-bold text-gray-800 dark:text-white lg:text-3xl hover:text-gray-700 dark:hover:text-gray-300"
+                            href="#">1Year1Book</a>
                     </div>
-                <button type="button" class="menuBurger text-gray-500 dark:text-gray-200 hover:text-gray-600 dark:hover:text-gray-400 focus:outline-none focus:text-gray-600 dark:focus:text-gray-400" aria-label="toggle menu">
-                    <svg class="w-6 h-6 fill-current">
-                        <path fill-rule="evenodd" d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"></path>
-                    </svg>
+
+                    <!-- Mobile menu button -->
+                    <div class="flex md:hidden ">
+                        <div class="closeBurger" aria-label="close Burger">
+                            <img src="https://img.icons8.com/material-sharp/50/000000/delete-sign.png"
+                                alt="year Book" />
+                        </div>
+                        <button type="button"
+                            class="menuBurger text-gray-500 dark:text-gray-200 hover:text-gray-600 dark:hover:text-gray-400 focus:outline-none focus:text-gray-600 dark:focus:text-gray-400"
+                            aria-label="toggle menu">
+                            <svg class="w-6 h-6 fill-current">
+                                <path fill-rule="evenodd"
+                                    d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z">
+                                </path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Mobile Menu open: "block", Menu closed: "hidden" -->
+                <nav class="items-center md:flex menu">
+                    <div class="flex flex-col md:flex-row md:mx-6">
+                        <a class="my-1 text-sm font-medium text-gray-700 dark:text-gray-200 hover:text-blue-500 dark:hover:text-blue-400 md:mx-4 md:my-0"
+                            href="home.html">Home</a>
+                        <a class="my-1 text-sm font-medium text-gray-700 dark:text-gray-200 hover:text-blue-500 dark:hover:text-blue-400 md:mx-4 md:my-0"
+                            href="#nosProduits">Produits</a>
+                        <a class="my-1 text-sm font-medium text-gray-700 dark:text-gray-200 hover:text-blue-500 dark:hover:text-blue-400 md:mx-4 md:my-0"
+                            href="blog.html">Blog</a>
+                        <a class="my-1 text-sm font-medium text-gray-700 dark:text-gray-200 hover:text-blue-500 dark:hover:text-blue-400 md:mx-4 md:my-0"
+                            href="#">Contact</a>
+
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div class="containertitle">
+        <h2 class="text-2xl font-bold titleSection">Qui suis je?</h2>
+        <div class="circle"></div>
+    </div>
+    <!--section presentation-->
+
+    <section class="bg-white dark:bg-gray-800 presentation">
+        <div class="container px-6 py-8 mx-auto">
+            <div class="items-center lg:flex">
+                <div class="lg:w-1/2">
+                    <h2 class="text-3xl font-bold text-gray-800 dark:text-gray-100">Who I am</h2>
+
+                    <p class="mt-4 text-gray-500 dark:text-gray-400 lg:max-w-md">
+                        Hi I am jane , software engineer <a class="font-bold text-blue-600 dark:text-blue-400"
+                            href="#">@BakaTeam</a> , Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum in
+                        sed non alias, fugiat, commodi nemo ut fugit corrupti dolorem sequi ex veniam consequuntur id,
+                        maiores beatae ipsa omnis aliquam?
+                    </p>
+
+                    <div class="espace">
+
+                    </div>
+                </div>
+
+                <div class="mt-8 lg:mt-0 lg:w-1/2">
+                    <div class="flex items-center justify-center lg:justify-end">
+                        <div class="max-w-lg">
+                            <img class="object-cover object-center w-full h-64 rounded-md shadow"
+                                src="https://images.unsplash.com/photo-1484399172022-72a90b12e3c1?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80"
+                                alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <div class="containertitle" id="nosProduits">
+        <h2 class="text-2xl font-bold titleSection">Nos offres</h2>
+        <div class="circle"></div>
+    </div>
+    <h1 class="titleOffres">Decouvrez nos offres</h1>
+    <!--section produits-->
+    <section id="produits">
+
+        <div class="bg-white dark:bg-gray-200 lg:mx-8 lg:flex lg:max-w-5xl  lg:rounded-lg bloc">
+            <div class="max-w-xl px-6 py-12 lg:max-w-5xl lg:w-1/2">
+                <h2 class="title"> Le magasine </h2>
+                <div class="texture">couverture souple</div>
+                <img src="/photos/yearBook.png" alt="couverture Year Book">
+                <button aria-label="selectionner"
+                    class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full button btnMag">
+                    Selectionner
                 </button>
             </div>
         </div>
 
-        <!-- Mobile Menu open: "block", Menu closed: "hidden" -->
-        <nav class="items-center md:flex menu">
-            <div class="flex flex-col md:flex-row md:mx-6">
-                <a class="my-1 text-sm font-medium text-gray-700 dark:text-gray-200 hover:text-blue-500 dark:hover:text-blue-400 md:mx-4 md:my-0" href="home.html">Home</a>
-                <a class="my-1 text-sm font-medium text-gray-700 dark:text-gray-200 hover:text-blue-500 dark:hover:text-blue-400 md:mx-4 md:my-0" href="#nosProduits">Produits</a>
-                <a class="my-1 text-sm font-medium text-gray-700 dark:text-gray-200 hover:text-blue-500 dark:hover:text-blue-400 md:mx-4 md:my-0" href="blog.html">Blog</a>
-                <a class="my-1 text-sm font-medium text-gray-700 dark:text-gray-200 hover:text-blue-500 dark:hover:text-blue-400 md:mx-4 md:my-0" href="#">Contact</a>
-              
-            </div>
-        </nav>
-    </div>
-</div>
-</header>
 
-<div class="containertitle"> <h2 class="text-2xl font-bold titleSection">Qui suis je?</h2><div class="circle"></div></div>
-<!--section presentation-->
 
-<section class="bg-white dark:bg-gray-800 presentation"> 
-    <div class="container px-6 py-8 mx-auto">
-        <div class="items-center lg:flex">
-            <div class="lg:w-1/2">
-                <h2 class="text-3xl font-bold text-gray-800 dark:text-gray-100">Who I am</h2>
-
-                <p class="mt-4 text-gray-500 dark:text-gray-400 lg:max-w-md">
-                    Hi I am jane , software engineer <a class="font-bold text-blue-600 dark:text-blue-400" href="#">@BakaTeam</a> , Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum in sed non alias, fugiat, commodi nemo ut fugit corrupti dolorem sequi ex veniam consequuntur id, maiores beatae ipsa omnis aliquam?
-                </p>
-
-                <div class="espace">
-                  
-                </div>
-            </div>
-
-            <div class="mt-8 lg:mt-0 lg:w-1/2">
-                <div class="flex items-center justify-center lg:justify-end">
-                    <div class="max-w-lg">
-                        <img class="object-cover object-center w-full h-64 rounded-md shadow" src="https://images.unsplash.com/photo-1484399172022-72a90b12e3c1?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80" alt="">
-                    </div>
-                </div>
+        <div class="bg-white dark:bg-gray-800 lg:mx-8 lg:flex lg:max-w-5xl lg:rounded-lg bloc">
+            <div class="max-w-xl px-6 py-12 lg:max-w-5xl lg:w-1/2">
+                <div class="title"> Le livre </div>
+                <h2 class="texture">couverture souple</h2>
+                <img src="/photos/yearBook.png" alt="couverture Year Book">
+                <button aria-label="selectionner"
+                    class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full button  btnLivre">
+                    Selectionner
+                </button>
             </div>
         </div>
-    </div>
-</section>
 
+    </section>
+    <!--modal-->
+    <div id="modalMag">
 
-
-<div class="containertitle" id="nosProduits"> <h2 class="text-2xl font-bold titleSection">Nos offres</h2><div class="circle"></div></div>
-<h1 class="titleOffres">Decouvrez nos offres</h1>
-<!--section produits-->
-<section id="produits">
-    
-    <div class="bg-white dark:bg-gray-200 lg:mx-8 lg:flex lg:max-w-5xl  lg:rounded-lg bloc">
-                <div class="max-w-xl px-6 py-12 lg:max-w-5xl lg:w-1/2">
-            <h2 class="title"> Le magasine </h2>
-            <div class="texture">couverture souple</div>
-            <img src="/photos/yearBook.png" alt="couverture Year Book">
-            <button aria-label="selectionner" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full button btnMag" >
-               Selectionner
-              </button>
-        </div>
-    </div>
-
-
-
-    <div class="bg-white dark:bg-gray-800 lg:mx-8 lg:flex lg:max-w-5xl lg:rounded-lg bloc">
-                <div class="max-w-xl px-6 py-12 lg:max-w-5xl lg:w-1/2">
-            <div class="title"> Le livre </div>
-            <h2 class="texture">couverture souple</h2>
-            <img src="/photos/yearBook.png" alt="couverture Year Book">
-            <button aria-label="selectionner" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full button  btnLivre" >
-               Selectionner
-              </button>
-        </div>
-    </div>
-
-</section>
-<!--modal-->
-<div id="modalMag">
-    
-<div class="max-w-xs mx-auto overflow-hidden bg-white rounded-lg shadow-lg dark:bg-gray-800">
-    <div class="close" aria-label="close">
-        <img src="https://img.icons8.com/material-sharp/50/000000/delete-sign.png" alt="year Book"/>
-        </div>
-    <div class="px-4 py-2">
-        <h1 class="text-3xl font-bold text-gray-800 uppercase dark:text-white">Le magasine</h1>
-        <p class="mt-1 text-sm text-gray-600 dark:text-gray-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi quos quidem sequi illum facere recusandae voluptatibus</p>
-    </div>
-
-    <img class="object-cover w-full h-48 mt-2" src="photos/yearBook.png" alt="Year Book">
-
-    <div class="flex items-center justify-between px-4 py-2 bg-gray-900">
-        <div id="exemplaireMag">
-            <label for="nombreExemplaireMag">Nombre d'exemplaire:</label>
-            <input id="nombreExemplaireMag" type="number" min ="1" max="99" >
-        </div>
-        <h1 class="text-lg font-bold text-white priceMag">15 €</h1>
-        
-    </div>
-</div>
-</div>
-
-<div id="modalLivre">
         <div class="max-w-xs mx-auto overflow-hidden bg-white rounded-lg shadow-lg dark:bg-gray-800">
-        <div class="close" aria-label="close">
-            <img src="https://img.icons8.com/material-sharp/50/000000/delete-sign.png" alt="year Book"/>
+            <div class="close" aria-label="close">
+                <img src="https://img.icons8.com/material-sharp/50/000000/delete-sign.png" alt="year Book" />
             </div>
-        <div class="px-4 py-2">
-            <h1 class="text-3xl font-bold text-gray-800 uppercase dark:text-white">Le livre</h1>
-            <p class="mt-1 text-sm text-gray-600 dark:text-gray-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi quos quidem sequi illum facere recusandae voluptatibus</p>
-        </div>
-    
-        <img class="object-cover w-full h-48 mt-2" src="photos/yearBook.png" alt="Year Book">
-    
-        <div class="flex items-center justify-between px-4 py-2 bg-gray-900">
-            <div id="exemplaireLivre">
-                <label for="nombreExemplaireLivre">Nombre d'exemplaire:</label>
-                <input id="nombreExemplaireLivre" type="number" min ="1" max="99" >
+            <div class="px-4 py-2">
+                <h1 class="text-3xl font-bold text-gray-800 uppercase dark:text-white">Le magasine</h1>
+                <p class="mt-1 text-sm text-gray-600 dark:text-gray-400">Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Modi quos quidem sequi illum facere recusandae voluptatibus</p>
             </div>
-            <h1 class="text-lg font-bold text-white">25€</h1>
+
+            <img class="object-cover w-full h-48 mt-2" src="photos/yearBook.png" alt="Year Book">
+
+            <div class="flex items-center justify-between px-4 py-2 bg-gray-900">
+                <div id="exemplaireMag">
+                    <label for="nombreExemplaireMag">Nombre d'exemplaire:</label>
+                    <input id="nombreExemplaireMag" type="number" min="1" max="99">
+                </div>
+                <h1 class="text-lg font-bold text-white priceMag">15€</h1>
+
+            </div>
         </div>
     </div>
+
+    <div id="modalLivre">
+        <div class="max-w-xs mx-auto overflow-hidden bg-white rounded-lg shadow-lg dark:bg-gray-800">
+            <div class="close" aria-label="close">
+                <img src="https://img.icons8.com/material-sharp/50/000000/delete-sign.png" alt="year Book" />
+            </div>
+            <div class="px-4 py-2">
+                <h1 class="text-3xl font-bold text-gray-800 uppercase dark:text-white">Le livre</h1>
+                <p class="mt-1 text-sm text-gray-600 dark:text-gray-400">Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Modi quos quidem sequi illum facere recusandae voluptatibus</p>
+            </div>
+
+            <img class="object-cover w-full h-48 mt-2" src="photos/yearBook.png" alt="Year Book">
+
+            <div class="flex items-center justify-between px-4 py-2 bg-gray-900">
+                <div id="exemplaireLivre">
+                    <label for="nombreExemplaireLivre">Nombre d'exemplaire:</label>
+                    <input id="nombreExemplaireLivre" type="number" min="1" max="99">
+                </div>
+                <h1 class="text-lg font-bold text-white priceLivre">25€</h1>
+            </div>
+        </div>
     </div>
 
 
-<!--footer-->
-<footer>
-<!-- component -->
-<div class="bg-gray-100 footer">
-    
-    <div>
-        <a class="text-2xl font-bold text-gray-800 dark:text-white lg:text-3xl hover:text-gray-700 dark:hover:text-gray-300 logo" href="#">1Year1Book</a>
-    </div>
-    <div class="max-w-6xl m-auto text-gray-800 flex flex-wrap justify-center">
-       <div class="p-5 w-48 ">
-          <div class="text-xs uppercase text-gray-500 font-medium">Home</div>
-          <a class="my-3 block" href="/#">Services <span class="text-teal-600 text-xs p-1"></span></a><a class="my-3 block" href="/#">Products <span class="text-teal-600 text-xs p-1"></span></a><a class="my-3 block" href="/#">About Us <span class="text-teal-600 text-xs p-1"></span></a><a class="my-3 block" href="/#">Pricing <span class="text-teal-600 text-xs p-1"></span></a><a class="my-3 block" href="/#">Partners <span class="text-teal-600 text-xs p-1">New</span></a> 
-       </div>
-       <div class="p-5 w-48 ">
-          <div class="text-xs uppercase text-gray-500 font-medium">User</div>
-          <a class="my-3 block" href="/#">Sign in <span class="text-teal-600 text-xs p-1"></span></a><a class="my-3 block" href="/#">New Account <span class="text-teal-600 text-xs p-1"></span></a><a class="my-3 block" href="/#">Demo <span class="text-teal-600 text-xs p-1">New</span></a><a class="my-3 block" href="/#">Career <span class="text-teal-600 text-xs p-1">We're hiring</span></a><a class="my-3 block" href="/#">Surveys <span class="text-teal-600 text-xs p-1">New</span></a> 
-       </div>
-       <div class="p-5 w-48 ">
-          <div class="text-xs uppercase text-gray-500 font-medium">Resources</div>
-          <a class="my-3 block" href="/#">Documentation <span class="text-teal-600 text-xs p-1"></span></a><a class="my-3 block" href="/#">Tutorials <span class="text-teal-600 text-xs p-1"></span></a><a class="my-3 block" href="/#">Support <span class="text-teal-600 text-xs p-1">New</span></a> 
-       </div>
-       <div class="p-5 w-48 ">
-          <div class="text-xs uppercase text-gray-500 font-medium">Product</div>
-          <a class="my-3 block" href="/#">Our Products <span class="text-teal-600 text-xs p-1"></span></a><a class="my-3 block" href="/#">Great Deals <span class="text-teal-600 text-xs p-1">New</span></a><a class="my-3 block" href="/#">Analytics <span class="text-teal-600 text-xs p-1"></span></a><a class="my-3 block" href="/#">Mobile <span class="text-teal-600 text-xs p-1"></span></a> 
-       </div>
-       <div class="p-5 w-48 ">
-          <div class="text-xs uppercase text-gray-500 font-medium">Support</div>
-          <a class="my-3 block" href="/#">Help Center <span class="text-teal-600 text-xs p-1"></span></a><a class="my-3 block" href="/#">Privacy Policy <span class="text-teal-600 text-xs p-1"></span></a><a class="my-3 block" href="/#">Conditions <span class="text-teal-600 text-xs p-1"></span></a> 
-       </div>
-       <div class="p-5 w-48 ">
-          <div class="text-xs uppercase text-gray-500 font-medium">Contact us</div>
-          <a class="my-3 block" href="/#">XXX XXXX, Floor 4 San Francisco, CA <span class="text-teal-600 text-xs p-1"></span></a><a class="my-3 block" href="/#">contact@company.com <span class="text-teal-600 text-xs p-1"></span></a> 
-       </div>
-    </div>
- </div>
- 
- <div class="bg-gray-100 pt-2 ">
-    <div class="flex pb-5 px-3 m-auto pt-5 border-t text-gray-800 text-sm flex-col
+    <!--footer-->
+    <footer>
+        <!-- component -->
+        <div class="bg-gray-100 footer">
+
+            <div>
+                <a class="text-2xl font-bold text-gray-800 dark:text-white lg:text-3xl hover:text-gray-700 dark:hover:text-gray-300 logo"
+                    href="#">1Year1Book</a>
+            </div>
+            <div class="max-w-6xl m-auto text-gray-800 flex flex-wrap justify-center">
+                <div class="p-5 w-48 ">
+                    <div class="text-xs uppercase text-gray-500 font-medium">Home</div>
+                    <a class="my-3 block" href="/#">Services <span class="text-teal-600 text-xs p-1"></span></a><a
+                        class="my-3 block" href="/#">Products <span class="text-teal-600 text-xs p-1"></span></a><a
+                        class="my-3 block" href="/#">About Us <span class="text-teal-600 text-xs p-1"></span></a><a
+                        class="my-3 block" href="/#">Pricing <span class="text-teal-600 text-xs p-1"></span></a><a
+                        class="my-3 block" href="/#">Partners <span class="text-teal-600 text-xs p-1">New</span></a>
+                </div>
+                <div class="p-5 w-48 ">
+                    <div class="text-xs uppercase text-gray-500 font-medium">User</div>
+                    <a class="my-3 block" href="/#">Sign in <span class="text-teal-600 text-xs p-1"></span></a><a
+                        class="my-3 block" href="/#">New Account <span class="text-teal-600 text-xs p-1"></span></a><a
+                        class="my-3 block" href="/#">Demo <span class="text-teal-600 text-xs p-1">New</span></a><a
+                        class="my-3 block" href="/#">Career <span class="text-teal-600 text-xs p-1">We're
+                            hiring</span></a><a class="my-3 block" href="/#">Surveys <span
+                            class="text-teal-600 text-xs p-1">New</span></a>
+                </div>
+                <div class="p-5 w-48 ">
+                    <div class="text-xs uppercase text-gray-500 font-medium">Resources</div>
+                    <a class="my-3 block" href="/#">Documentation <span class="text-teal-600 text-xs p-1"></span></a><a
+                        class="my-3 block" href="/#">Tutorials <span class="text-teal-600 text-xs p-1"></span></a><a
+                        class="my-3 block" href="/#">Support <span class="text-teal-600 text-xs p-1">New</span></a>
+                </div>
+                <div class="p-5 w-48 ">
+                    <div class="text-xs uppercase text-gray-500 font-medium">Product</div>
+                    <a class="my-3 block" href="/#">Our Products <span class="text-teal-600 text-xs p-1"></span></a><a
+                        class="my-3 block" href="/#">Great Deals <span
+                            class="text-teal-600 text-xs p-1">New</span></a><a class="my-3 block" href="/#">Analytics
+                        <span class="text-teal-600 text-xs p-1"></span></a><a class="my-3 block" href="/#">Mobile <span
+                            class="text-teal-600 text-xs p-1"></span></a>
+                </div>
+                <div class="p-5 w-48 ">
+                    <div class="text-xs uppercase text-gray-500 font-medium">Support</div>
+                    <a class="my-3 block" href="/#">Help Center <span class="text-teal-600 text-xs p-1"></span></a><a
+                        class="my-3 block" href="/#">Privacy Policy <span
+                            class="text-teal-600 text-xs p-1"></span></a><a class="my-3 block" href="/#">Conditions
+                        <span class="text-teal-600 text-xs p-1"></span></a>
+                </div>
+                <div class="p-5 w-48 ">
+                    <div class="text-xs uppercase text-gray-500 font-medium">Contact us</div>
+                    <a class="my-3 block" href="/#">XXX XXXX, Floor 4 San Francisco, CA <span
+                            class="text-teal-600 text-xs p-1"></span></a><a class="my-3 block"
+                        href="/#">contact@company.com <span class="text-teal-600 text-xs p-1"></span></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-gray-100 pt-2 ">
+            <div class="flex pb-5 px-3 m-auto pt-5 border-t text-gray-800 text-sm flex-col
        md:flex-row max-w-6xl">
-       <div >© Copyright 2020. All Rights Reserved.</div>
-       <div class="md:flex-auto md:flex-row-reverse mt-2 flex-row flex">
-          <a href="/#" class="w-6 mx-1">
-             <svg class="fill-current cursor-pointer text-gray-500 hover:text-gray-400" width="100%" height="100%" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule: evenodd; clip-rule: evenodd; stroke-linejoin: round; stroke-miterlimit: 2;">
-                <path id="Twitter" d="M24,12c0,6.627 -5.373,12 -12,12c-6.627,0 -12,-5.373 -12,-12c0,-6.627
+                <div>© Copyright 2020. All Rights Reserved.</div>
+                <div class="md:flex-auto md:flex-row-reverse mt-2 flex-row flex">
+                    <a href="/#" class="w-6 mx-1">
+                        <svg class="fill-current cursor-pointer text-gray-500 hover:text-gray-400" width="100%"
+                            height="100%" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve"
+                            style="fill-rule: evenodd; clip-rule: evenodd; stroke-linejoin: round; stroke-miterlimit: 2;">
+                            <path id="Twitter" d="M24,12c0,6.627 -5.373,12 -12,12c-6.627,0 -12,-5.373 -12,-12c0,-6.627
                    5.373,-12 12,-12c6.627,0 12,5.373 12,12Zm-6.465,-3.192c-0.379,0.168
                    -0.786,0.281 -1.213,0.333c0.436,-0.262 0.771,-0.676
                    0.929,-1.169c-0.408,0.242 -0.86,0.418 -1.341,0.513c-0.385,-0.411
@@ -213,22 +264,28 @@
                    -0.339,-0.01 -0.504,-0.03c0.934,0.599 2.044,0.949 3.237,0.949c3.883,0
                    6.007,-3.217 6.007,-6.008c0,-0.091 -0.002,-0.183 -0.006,-0.273c0.413,-0.298
                    0.771,-0.67 1.054,-1.093Z"></path>
-             </svg>
-          </a>
-          <a href="/#" class="w-6 mx-1">
-             <svg class="fill-current cursor-pointer text-gray-500 hover:text-gray-400" width="100%" height="100%" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve"  style="fill-rule: evenodd; clip-rule: evenodd; stroke-linejoin: round; stroke-miterlimit: 2;">
-                <path id="Facebook" d="M24,12c0,6.627 -5.373,12 -12,12c-6.627,0 -12,-5.373 -12,-12c0,-6.627
+                        </svg>
+                    </a>
+                    <a href="/#" class="w-6 mx-1">
+                        <svg class="fill-current cursor-pointer text-gray-500 hover:text-gray-400" width="100%"
+                            height="100%" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve"
+                            style="fill-rule: evenodd; clip-rule: evenodd; stroke-linejoin: round; stroke-miterlimit: 2;">
+                            <path id="Facebook" d="M24,12c0,6.627 -5.373,12 -12,12c-6.627,0 -12,-5.373 -12,-12c0,-6.627
                    5.373,-12 12,-12c6.627,0 12,5.373
                    12,12Zm-11.278,0l1.294,0l0.172,-1.617l-1.466,0l0.002,-0.808c0,-0.422
                    0.04,-0.648 0.646,-0.648l0.809,0l0,-1.616l-1.295,0c-1.555,0 -2.103,0.784
                    -2.103,2.102l0,0.97l-0.969,0l0,1.617l0.969,0l0,4.689l1.941,0l0,-4.689Z"></path>
-             </svg>
-          </a>
-          <a href="/#" class="w-6 mx-1">
-             <svg class="fill-current cursor-pointer text-gray-500 hover:text-gray-400" width="100%" height="100%"  version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule: evenodd; clip-rule: evenodd; stroke-linejoin: round; stroke-miterlimit: 2;">
-                <g id="Layer_1">
-                   <circle id="Oval" cx="12" cy="12" r="12"></circle>
-                   <path id="Shape" d="M19.05,8.362c0,-0.062 0,-0.125 -0.063,-0.187l0,-0.063c-0.187,-0.562
+                        </svg>
+                    </a>
+                    <a href="/#" class="w-6 mx-1">
+                        <svg class="fill-current cursor-pointer text-gray-500 hover:text-gray-400" width="100%"
+                            height="100%" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve"
+                            style="fill-rule: evenodd; clip-rule: evenodd; stroke-linejoin: round; stroke-miterlimit: 2;">
+                            <g id="Layer_1">
+                                <circle id="Oval" cx="12" cy="12" r="12"></circle>
+                                <path id="Shape" d="M19.05,8.362c0,-0.062 0,-0.125 -0.063,-0.187l0,-0.063c-0.187,-0.562
                       -0.687,-0.937 -1.312,-0.937l0.125,0c0,0 -2.438,-0.375 -5.75,-0.375c-3.25,0
                       -5.75,0.375 -5.75,0.375l0.125,0c-0.625,0 -1.125,0.375
                       -1.313,0.937l0,0.063c0,0.062 0,0.125 -0.062,0.187c-0.063,0.625 -0.25,1.938
@@ -242,28 +299,31 @@
                       -0.204,-0.34l0,-4.631c0,-0.136 0.068,-0.273 0.204,-0.341c0.136,-0.068
                       0.272,-0.068 0.409,0l3.201,2.316c0.068,0.068 0.136,0.204
                       0.136,0.34c0.068,0.136 0,0.273 -0.136,0.341Z" style="fill: rgb(255, 255, 255);"></path>
-                </g>
-             </svg>
-          </a>
-          
-          <a href="/#" class="w-6 mx-1">
-             <svg class="fill-current cursor-pointer text-gray-500 hover:text-gray-400" width="100%" height="100%"  version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule: evenodd; clip-rule: evenodd; stroke-linejoin: round; stroke-miterlimit: 2;">
-                <path id="Combined-Shape" d="M12,24c6.627,0 12,-5.373 12,-12c0,-6.627 -5.373,-12 -12,-12c-6.627,0
+                            </g>
+                        </svg>
+                    </a>
+
+                    <a href="/#" class="w-6 mx-1">
+                        <svg class="fill-current cursor-pointer text-gray-500 hover:text-gray-400" width="100%"
+                            height="100%" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve"
+                            style="fill-rule: evenodd; clip-rule: evenodd; stroke-linejoin: round; stroke-miterlimit: 2;">
+                            <path id="Combined-Shape" d="M12,24c6.627,0 12,-5.373 12,-12c0,-6.627 -5.373,-12 -12,-12c-6.627,0
                    -12,5.373 -12,12c0,6.627 5.373,12 12,12Zm6.591,-15.556l-0.722,0c-0.189,0
                    -0.681,0.208 -0.681,0.385l0,6.422c0,0.178 0.492,0.323
                    0.681,0.323l0.722,0l0,1.426l-4.675,0l0,-1.426l0.935,0l0,-6.655l-0.163,0l-2.251,8.081l-1.742,0l-2.222,-8.081l-0.168,0l0,6.655l0.935,0l0,1.426l-3.74,0l0,-1.426l0.519,0c0.203,0
                    0.416,-0.145 0.416,-0.323l0,-6.422c0,-0.177 -0.213,-0.385
                    -0.416,-0.385l-0.519,0l0,-1.426l4.847,0l1.583,5.704l0.042,0l1.598,-5.704l5.021,0l0,1.426Z"></path>
-             </svg>
-          </a>
-       </div>
-    </div>
- </div>
-</footer>
- <!-- appel du fichier js ---->
- <script type="module" src="javascript/fichier.js"></script>
- <script type="module" src="javascript/menuMobil.js"></script>
- 
-</body>
-</html>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- appel du fichier js ---->
+    <script type="module" src="javascript/fichier.js"></script>
+    <script type="module" src="javascript/menuMobil.js"></script>
 
+</body>
+
+</html>

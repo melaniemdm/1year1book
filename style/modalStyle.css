@@ -124,11 +124,13 @@
     margin: 20px;
   }
 }
-#exemplaireMag, #exemplaireLivre {
+#exemplaireMag,
+#exemplaireLivre {
   width: 10px;
   color: white;
 }
-#exemplaireMag input, #exemplaireLivre input {
+#exemplaireMag input,
+#exemplaireLivre input {
   color: black;
   width: 150px;
 }
@@ -145,7 +147,8 @@
   left: 80%;
 }
 
-#modalMag, #modalLivre {
+#modalMag,
+#modalLivre {
   position: fixed;
   top: 0;
   left: 0;
