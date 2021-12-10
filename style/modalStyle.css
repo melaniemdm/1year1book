@@ -89,7 +89,7 @@
 }
 
 .logo {
-  margin-left: 208px;
+  margin-left: 55px;
 }
 
 /*---------------mise en page du titre des sections---------------*/
@@ -149,7 +149,7 @@
   }
 
   .logo {
-    margin-left: 21px;
+    margin-left: 10px;
   }
 }
 #exemplaireMag,
@@ -185,4 +185,14 @@
   justify-content: center;
   align-items: center;
   background-color: rgba(167, 231, 201, 0.5);
+}
+
+#footerHome {
+  margin-left: 0px;
+}
+
+@media only screen and (max-width: 767px) {
+  #footerHome {
+    margin-left: 15px;
+  }
 }/*# sourceMappingURL=modalStyle.css.map */

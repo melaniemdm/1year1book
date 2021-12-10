@@ -31,3 +31,11 @@
   align-items: center;
   background-color: rgba(167, 231, 201, 0.5);
 }
+#footerHome{
+  margin-left: 0px;
+}
+@media #{$small-down} {
+  #footerHome{
+    margin-left: 15px;
+  }
+}
