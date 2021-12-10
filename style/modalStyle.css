@@ -127,7 +127,6 @@
   #produits {
     display: flex;
     flex-direction: column;
-    background-color: #a699ca;
     justify-content: space-between;
   }
 
@@ -146,6 +145,11 @@
 
   .logo {
     margin-left: 21px;
+  }
+
+  .footer {
+    margin-top: 0px;
+    padding-top: 0px;
   }
 }
 #exemplaireMag,
