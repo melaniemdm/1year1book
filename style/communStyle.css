@@ -89,7 +89,7 @@
 }
 
 .logo {
-  margin-left: 208px;
+  margin-left: 55px;
 }
 
 /*---------------mise en page du titre des sections---------------*/
@@ -109,7 +109,7 @@
   margin-bottom: 50px;
 }
 
-/*---------------menu responsive---------------*/
+/*---------------responsive---------------*/
 @media only screen and (max-width: 767px) {
   .menu {
     display: none;
@@ -143,12 +143,12 @@
     height: 650px;
   }
 
-  .logo {
-    margin-left: 21px;
-  }
-
   .footer {
     margin-top: 0px;
     padding-top: 0px;
+  }
+
+  .logo {
+    margin-left: 10px;
   }
 }/*# sourceMappingURL=communStyle.css.map */

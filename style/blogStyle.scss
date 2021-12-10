@@ -11,3 +11,9 @@
 .titleBlog{
     margin-left: -15px;
 }
+
+@media #{$small-down} {
+#footerBlog{
+    padding-left: 10px;
+}
+}

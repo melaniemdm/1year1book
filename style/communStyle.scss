@@ -74,7 +74,7 @@
   padding-top: 90px;
 }
 .logo {
-  margin-left: 208px;
+  margin-left: 55px;
 }
 
 /*---------------mise en page du titre des sections---------------*/
@@ -93,7 +93,7 @@
   margin-bottom: 50px;
 }
 
-/*---------------menu responsive---------------*/
+/*---------------responsive---------------*/
 @media #{$small-down} {
   .menu {
     display: none;
@@ -121,11 +121,12 @@ justify-content: space-between;
     width: auto;
   height: 650px;
   }
-  .logo{
-    margin-left: 21px;
-  }
   .footer {
     margin-top: 0px;
     padding-top: 0px;
+      }
+  .logo{
+    margin-left: 10px;
   }
+  
 }
