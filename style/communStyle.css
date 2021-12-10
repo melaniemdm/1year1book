@@ -123,4 +123,27 @@
     width: 20px;
     margin: 20px;
   }
+
+  #produits {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .livre {
+    margin-top: 70px;
+  }
+
+  .mag {
+    margin-top: 10px;
+  }
+
+  .bloc {
+    width: auto;
+    height: 650px;
+  }
+
+  .logo {
+    margin-left: 21px;
+  }
 }/*# sourceMappingURL=communStyle.css.map */

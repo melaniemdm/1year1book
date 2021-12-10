@@ -123,6 +123,30 @@
     width: 20px;
     margin: 20px;
   }
+
+  #produits {
+    display: flex;
+    flex-direction: column;
+    background-color: #a699ca;
+    justify-content: space-between;
+  }
+
+  .livre {
+    margin-top: 70px;
+  }
+
+  .mag {
+    margin-top: 10px;
+  }
+
+  .bloc {
+    width: auto;
+    height: 650px;
+  }
+
+  .logo {
+    margin-left: 21px;
+  }
 }
 #exemplaireMag,
 #exemplaireLivre {
