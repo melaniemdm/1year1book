@@ -1,20 +1,36 @@
 @import "responsive.scss";
 @import url("https://fonts.googleapis.com/css2?family=Kodchasan:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+
+$colorTheme:rgb(242, 243, 243);
+$colorThemeSemiTransparent: rgba(242, 243, 243,0.5);
+$colorThemeSemiTransparentCardHover: rgba(242, 243, 243,0.2);
+$colorThemeTitle:rgb(44, 44, 44);
+
+@mixin center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 /*---------------section---------------*/
+.logo img, .logoFooter{
+  width: 150px;
+}
+.hoverMenu:hover{
+  text-decoration: underline;
+  font-weight: bolder;
+}
 .titleSection {
-  background-color: rgb(22, 112, 63);
+  background-color: $colorThemeTitle;
   opacity: 0.4;
   color: white;
   width: 70%;
-  border-end-start-radius: -50px;
   padding-left: 10px;
   margin-top: 40px;
+  
 }
 .bloc {
-  display: flex;
+  @include center;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   height: 500px;
   box-shadow: inset 2px 2px 8px 8px grey;
   transition: 0.3s linear;
@@ -46,13 +62,12 @@
   padding-bottom: 50px;
   display: flex;
   justify-content: center;
-  background-color: rgb(153, 202, 175);
+  background-color: $colorTheme;
   margin-top: -50px;
 }
 .titleOffres {
   font-family: "Kodchasan", "Arial Narrow", Arial, sans-serif;
   font-size: xx-large;
-  background-color: red;
   display: flex;
   justify-content: center;
 }
@@ -73,8 +88,8 @@
   margin-top: 100px;
   padding-top: 90px;
 }
-.logo {
-  margin-left: 55px;
+.logoFooter{
+  margin-left: 210px;
 }
 
 /*---------------mise en page du titre des sections---------------*/
