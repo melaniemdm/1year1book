@@ -1,9 +1,9 @@
 //déclaration des noeuds html en tant que variables globales et ajout des events listener associés
 const nodeMenuBurger = document.querySelector(".menuBurger");
 nodeMenuBurger.addEventListener("click", openMenu);
- const nodeMenuMobil = document.querySelector(".menu");
- const nodeCrossClose = document.querySelector(".closeBurger");
- nodeCrossClose.addEventListener("click", closeMenu);
+const nodeMenuMobil = document.querySelector(".menu");
+const nodeCrossClose = document.querySelector(".closeBurger");
+nodeCrossClose.addEventListener("click", closeMenu);
 //fonction qui ouvre le menu responsive
 function openMenu() {
   nodeMenuMobil.style.display = "flex";
