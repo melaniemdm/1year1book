@@ -1,22 +1,18 @@
-let nodeMenuMobil = document.querySelector(".menuBurger");
-nodeMenuMobil.addEventListener("click", openMenu);
-
+//déclaration des noeuds html en tant que variables globales et ajout des events listener associés
+const nodeMenuBurger = document.querySelector(".menuBurger");
+nodeMenuBurger.addEventListener("click", openMenu);
+ const nodeMenuMobil = document.querySelector(".menu");
+ const nodeCrossClose = document.querySelector(".closeBurger");
+ nodeCrossClose.addEventListener("click", closeMenu);
+//fonction qui ouvre le menu responsive
 function openMenu() {
-  let nodeMenuMobil = document.querySelector(".menu");
   nodeMenuMobil.style.display = "flex";
-  let nodeMenuBurger = document.querySelector(".menuBurger");
   nodeMenuBurger.style.display = "none";
-  let nodeCrossClose = document.querySelector(".closeBurger");
   nodeCrossClose.style.display = "flex";
 }
-let nodeCloseBurger = document.querySelector(".closeBurger");
-nodeCloseBurger.addEventListener("click", closeMenu);
-
+//fonction qui ferme le menu responsive
 function closeMenu() {
-  let nodeMenuMobil = document.querySelector(".menu");
   nodeMenuMobil.style.display = "none";
-  let nodeMenuBurger = document.querySelector(".menuBurger");
   nodeMenuBurger.style.display = "flex";
-  let nodeCrossClose = document.querySelector(".closeBurger");
   nodeCrossClose.style.display = "none";
 }
