@@ -11,4 +11,4 @@
 
 ## Lien html
 
-* [TestOn](https://melaniemdm.github.io/testOn/home.html)
+* [TestOn](https://melaniemdm.github.io/testOn/)
